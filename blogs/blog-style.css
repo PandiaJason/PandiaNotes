@@ -1,0 +1,36 @@
+body {
+    font-family: 'EB Garamond', serif;
+    line-height: 1.6;
+    margin: auto;
+    max-width: 90%;
+}
+
+h1, h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+a {
+    color: rgb(0,0,0);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.close-button {
+    float: left;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 2px solid #000;
+    padding: 1px 6px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a.close-button:hover {
+    background-color: rgba(0, 0, 0);
+    color: #ffffff;
+}
