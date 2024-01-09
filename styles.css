@@ -41,34 +41,6 @@ nav a {
     color: rgb(0, 0, 0);
 }
 
-#secondary-header {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-}
-
-#secondary-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-}
-
-#secondary-header nav li {
-    margin-right: 15px;
-}
-
-#secondary-header nav a {
-    text-decoration: none;
-    color: black;
-}
-
 
 h1, h2 {
     color: rgb(0, 0, 0);
