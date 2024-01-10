@@ -185,30 +185,5 @@
             <strong>Maintained by Jason Pandian</strong>
         </section>
     </footer>
-
-
-<script>
-    // Update the position of the footer when the content changes
-    function updateFooterPosition() {
-        var body = document.body,
-            html = document.documentElement;
-
-        var height = Math.max(body.scrollHeight, body.offsetHeight,
-            html.clientHeight, html.scrollHeight, html.offsetHeight);
-
-        var windowHeight = window.innerHeight;
-
-        var footer = document.getElementById("footer");
-        if (height > windowHeight) {
-            footer.style.position = "relative";
-        } else {
-            footer.style.position = "fixed";
-        }
-    }
-
-    window.addEventListener("resize", updateFooterPosition);
-    window.addEventListener("DOMContentLoaded", updateFooterPosition);
-</script>
-
 </body>
 </html>
