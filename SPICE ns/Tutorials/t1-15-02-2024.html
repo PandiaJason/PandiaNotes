@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Limitation Game">
     <title>Limitation Game</title>
-    <link rel="icon" href="../JP.png" type="image/png">
+    <link rel="icon" href="../../JP.png" type="image/png">
     <link rel="stylesheet" href="../../styles.css"> 
     <link rel="stylesheet" href="./tutorials-style.css">
 
@@ -20,7 +20,25 @@
     </header>
     <p>S P I C E is a Space Geometrical data toolkit containing Spacecraft, Planet, Instrument, C-matrix, Events (S P I C E). It is developed by NAIF at NASA in the US. It is the interspace standard for Space Research and Mathematical Observations. S P I C E use cases extend from mission concept development through post-mission data analysis. It involves correlating individual instrument datasets from other instruments on the same or different spacecraft information.</p>
     <h2>S P I C E Kernels</h2>
-    <p>S P I C E datasets are termed S P I C E kernels/ kernel files, with kernel files composed of astrodynamics, ancillary, and navigation data, providing precise observation geometry for space research and studies.</p>
+    <p>S P I C E datasets are termed S P I C E kernels/ kernel files, with kernel files composed of astrodynamics, ancillary, and navigation data, providing precise observation geometry for space research and studies. S P I C E kernels are prepared by the most knowledgeable people in the Space STEM field. Kernels are available in various digital formats such as binary kernels, meta JSON kernels, and numerical data kernels. The term S P I C E helps us understand the logical aspect of these kernels and components.</p>
+    <li>
+        <strong>S:</strong> Spacecraft ephemeris, given as a function of time. (SPK)
+    </li>
+    <li>
+        <strong>P:</strong> Planet, satellite, comet, or asteroid ephemerides, or more generally, the location of any target body, given as a function of time. (also SPK)
+        <p>The P component logically includes certain physical, dynamical, and cartographic constants for target bodies, such as size and shape specifications, and orientation of the spin axis and prime meridian. (PCK)</p>
+    </li>
+    <li>
+        <strong>I:</strong> Instrument information containing descriptive data peculiar to the geometric aspects of a particular scientific instrument, such as field-of-view size, shape, and orientation parameters. (IK)
+    </li>
+    <li>
+        <strong>C:</strong> Orientation information, containing a transformation, traditionally called the "C-matrix," which provides time-tagged pointing (orientation) angles for a spacecraft bus or a spacecraft structure upon which science instruments are mounted. The C component may also include angular rate data for that structure. (CK)
+    </li>
+    <li>
+        <strong>E:</strong> Events information, summarizing mission activities - both planned and unanticipated. Events data are contained in the SPICE E-kernel file set, which consists of three components: Science Plans, Sequences, and Notes. (EK)
+        <p>(Note: the Events kernel is rarely used.)</p>
+    </li>
+    
     <p> </p>
 
 </body>
