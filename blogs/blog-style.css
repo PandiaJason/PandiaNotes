@@ -45,4 +45,5 @@ a.close-button:hover {
 .tutdiv {
     margin: auto;
     max-width: 70%;
+    text-align: justify;
 }
