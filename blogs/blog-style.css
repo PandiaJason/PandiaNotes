@@ -47,3 +47,15 @@ a.close-button:hover {
     max-width: 70%;
     text-align: justify;
 }
+
+@media only screen and (max-width: 767px) {
+    .tutdiv {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .tutdiv {
+        max-width: 90%;
+    }
+}
