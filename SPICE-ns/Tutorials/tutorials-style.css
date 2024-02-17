@@ -41,3 +41,8 @@ a.close-button:hover {
     background-color: rgba(0, 0, 0);
     color: #ffffff;
 }
+
+.tutdiv {
+    margin: auto;
+    max-width: 70%;
+}

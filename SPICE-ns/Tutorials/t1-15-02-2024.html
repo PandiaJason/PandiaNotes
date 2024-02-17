@@ -23,49 +23,54 @@
 
     <header>
         <h1><a href="../SPICE-ns.html" class="close-button">X</a></h1>
-        <h1>What is SPICE ? </h1>
+        <h1>🌌 What is SPICE ? </h1>
     </header>
-    <p>SPICE is a Space Geometrical data toolkit containing Spacecraft, Planet, Instrument, C-matrix, Events (SPICE). It is developed by NAIF at NASA in the US. It is the interspace standard for Space Research and Mathematical Observations. SPICE use cases extend from mission concept development through post-mission data analysis. It involves correlating individual instrument datasets from other instruments on the same or different spacecraft information.</p>
-    <h2>SPICE Kernels</h2>
-    <p>SPICE datasets are termed SPICE kernels/ kernel files, with kernel files composed of astrodynamics, ancillary, and navigation data, providing precise observation geometry for space research and studies. SPICE kernels are prepared by the most knowledgeable people in the Space STEM field. Kernels are available in various digital formats such as binary kernels, meta JSON kernels, and numerical data kernels. The term SPICE helps us understand the logical aspect of these kernels and components.</p>
-    <ul>
-        <li>
-            <strong>S:</strong> Spacecraft ephemeris, given as a function of time. (SPK)[1]
-        </li> <p><strong>Ephemeris</strong> refers to a set of tabulated data that describes the positions and movements of celestial objects, such as planets, satellites, comets, or asteroids, as a function of time.</p>
-        <li>
-            <strong>P:</strong> Planet, satellite, comet, or asteroid ephemerides, or more generally, the location of any target body, given as a function of time. (also SPK)
-            <p>The P component logically includes certain physical, dynamical, and cartographic constants for target bodies, such as size and shape specifications, and orientation of the spin axis and prime meridian. (PCK)</p>
-        </li>
-        <li>
-            <strong>I:</strong> Instrument information containing descriptive data peculiar to the geometric aspects of a particular scientific instrument, such as field-of-view size, shape, and orientation parameters. (IK)
-        </li>
-        <li>
-            <strong>C:</strong> Orientation information, containing a transformation, traditionally called the "C-matrix," which provides time-tagged pointing (orientation) angles for a spacecraft bus or a spacecraft structure upon which science instruments are mounted. The C component may also include angular rate data for that structure. (CK)
-        </li>
-        <li>
-            <strong>E:</strong> Events information, summarizing mission activities - both planned and unanticipated. Events data are contained in the SPICE E-kernel file set, which consists of three components: Science Plans, Sequences, and Notes. (EK)
-            <p>(Note: the Events kernel is rarely used.)</p>
-        </li>
-    </ul>
+    <div class="tutdiv">
+        <p>SPICE is a Space Geometrical data modular toolkit containing Spacecraft, Planet, Instrument, C-matrix, Events (SPICE). It is developed by NAIF at NASA in the US. It is the interspace standard for Space Research and Mathematical Observations. SPICE use cases extend from mission concept development through post-mission data analysis. It involves correlating individual instrument datasets from other instruments on the same or different spacecraft information.</p>
+        <h2>📡 SPICE Kernels</h2>
+        <p>SPICE datasets are termed SPICE kernels/ kernel files, with kernel files composed of astrodynamics, ancillary, and navigation data, providing precise observation geometry for space research and studies. SPICE kernels are prepared by the most knowledgeable people in the Space STEM field. Kernels are available in various digital formats such as binary kernels, meta JSON kernels, and numerical data kernels. The term SPICE helps us understand the logical aspect of these kernels and components.</p>
+        <ul>
+            <li>
+                <strong>S:</strong> Spacecraft ephemeris, given as a function of time. (SPK)[1]
+            </li> <p><strong>Ephemeris</strong> refers to a set of tabulated data that describes the positions and movements of celestial objects, such as planets, satellites, comets, or asteroids, as a function of time.</p>
+            <li>
+                <strong>P:</strong> Planet, satellite, comet, or asteroid ephemerides, or more generally, the location of any target body, given as a function of time. (also SPK)
+                <p>The P component logically includes certain physical, dynamical, and cartographic constants for target bodies, such as size and shape specifications, and orientation of the spin axis and prime meridian. (PCK)</p>
+            </li>
+            <li>
+                <strong>I:</strong> Instrument information containing descriptive data peculiar to the geometric aspects of a particular scientific instrument, such as field-of-view size, shape, and orientation parameters. (IK)
+            </li>
+            <li>
+                <strong>C:</strong> Orientation information, containing a transformation, traditionally called the "C-matrix," which provides time-tagged pointing (orientation) angles for a spacecraft bus or a spacecraft structure upon which science instruments are mounted. The C component may also include angular rate data for that structure. (CK)
+            </li>
+            <li>
+                <strong>E:</strong> Events information, summarizing mission activities - both planned and unanticipated. Events data are contained in the SPICE E-kernel file set, which consists of three components: Science Plans, Sequences, and Notes. (EK)
+                <p>(Note: the Events kernel is rarely used.)</p>
+            </li>
+        </ul>
 
-    <h2>Additional SPICE Components</h2>
+        <strong>Additional SPICE Components</strong>
 
-    <p>Some important components of the SPICE system, not part of the "SPICE" acronym, include:</p>
+        <p>Some important components of the SPICE system, not part of the "SPICE" acronym, include:</p>
 
-    <ul>
-        <li>A frames kernel (FK): Specifications for reference frames used by flight projects, including mounting alignment information for instruments, antennas, and other structures of interest.</li>
-        <li>Spacecraft clock (SCLK) and leap seconds (LSK) kernels: Used in converting time tags between various time measurement systems.</li>
-        <li>Digital shape model kernel (DSK): Separate designs for small, irregularly shaped bodies (asteroids and comet nuclei) and large, more uniformly shaped bodies (Moon, Earth, and Mars). Offers higher fidelity shape models within SPICE for bodies with detailed shape calculations.</li>
-    </ul>
+        <ul>
+            <li>A frames kernel (FK): Specifications for reference frames used by flight projects, including mounting alignment information for instruments, antennas, and other structures of interest.</li>
+            <li>Spacecraft clock (SCLK) and leap seconds (LSK) kernels: Used in converting time tags between various time measurement systems.</li>
+            <li>Digital shape model kernel (DSK): Separate designs for small, irregularly shaped bodies (asteroids and comet nuclei) and large, more uniformly shaped bodies (Moon, Earth, and Mars). Offers higher fidelity shape models within SPICE for bodies with detailed shape calculations.</li>
+        </ul>
+        <h2>🚀 Usefulness of SPICE</h2>
+        <p>Think of SPICE as a collection of software toolkits with APIs (subroutines/modules) designed to load kernel files for geometric observation and scientific calculations. It serves as a geometric subsystem to predict certain geometric events concerning SPICE ephemerides time and has the capability to make predictions beyond that scope as well.</p>
+        <p>Users can integrate SPICE for a wide range of use cases in their projects. Originally developed in ANSI FORTRAN, it was later officially made available in ANSI C, MATLAB, and Java Native Interface. Additionally, third-party support extends to modern programming languages like Python, Ruby, Swift, Julia, and Rust. 
+            Its rich availability makes it highly suitable for Space Research and Missions Event Analysis and Planning. Government organizations like ESA and ISRO utilize the SPICE standard for their mission data, establishing it as an inter-space standard for spatial geometry.</p>
+        <h2>References</h2>
+        <ol>
+            <li>
+                National Aeronautics and Space Administration. (n.d.). SPICE - Spacecraft, Planet, Instrument, C-matrix, Events. Retrieved from
+                <a href="https://naif.jpl.nasa.gov/naif/spiceconcept.html" target="_blank">https://naif.jpl.nasa.gov/naif/spiceconcept.html</a>
+            </li>
+            <!-- Add more references as needed -->
+        </ol>
+    </div>
 
-    <h2>References</h2>
-    <ol>
-        <li>
-            National Aeronautics and Space Administration. (n.d.). SPICE - Spacecraft, Planet, Instrument, C-matrix, Events. Retrieved from
-            <a href="https://naif.jpl.nasa.gov/naif/spiceconcept.html" target="_blank">https://naif.jpl.nasa.gov/naif/spiceconcept.html</a>
-        </li>
-        <!-- Add more references as needed -->
-    </ol>
-    
 </body>
 </html>
