@@ -86,3 +86,45 @@ section {
     background-color: rgba(255, 255, 255, 0.1); /* Set a semi-transparent white background */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+
+a.nav-button {
+    margin: 0 auto; /* Centers the button horizontally */
+    margin-right: 15px; 
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff; /* Set text color */
+    border: 2px solid #ffffff;
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a.nav-button:hover {
+    font-weight: bold;
+    /* font-size: 18px; */
+    background-color: rgb(255, 255, 255); /* Change background color with some transparency */
+    color: #000000; /* Change text color */
+}
+
+
+a.open-button {
+
+    float: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 20px; 
+    border: 2px solid #000;
+    padding: 1px 6px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a.open-button:hover {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0);
+    color: #ffffff;
+}
