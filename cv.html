@@ -18,7 +18,7 @@
         font-family: 'Roboto', sans-serif;
         line-height: 1.6;
         margin: auto;
-        max-width: 90%;
+        max-width: 100%;
     }
 
         h1, h2 {
@@ -36,14 +36,15 @@
         }
 
         a.close-button {
-            float: left;
-            font-size: 20px;
-            margin-right: 10px;
-            border: 2px solid #000;
-            padding: 1px 6px;
-            text-align: center;
-            text-decoration: none;
-            transition: background-color 0.3s, color 0.3s;
+
+        float: left;
+        margin-left: 20px; 
+        font-size: 15px;
+        border: 2px solid #000;
+        padding: 1px 6px;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
         }
 
         a.close-button:hover {
@@ -60,14 +61,26 @@
             float: right;
         }
 
+        .tutdiv {
+        text-align: center;
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: justify;
+        padding: 40px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.1); /* Set a semi-transparent white background */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a box shadow for a blurry effect */
+        }
+
         #footer {
             margin-top: 20px;
             bottom: 0;
             text-align:center;
             max-width: 100%;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
+            background-color: rgba(255, 255, 255, 0.1); /* Set a semi-transparent white background */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
         }
     </style>
 </head>
@@ -78,6 +91,7 @@
         <a href="index.html" class="close-button">back</a>
         <h1>Jason Pandian</h1>
     </header>
+    <div class="tutdiv">
 
     <section id="contact-info" style="text-align: center;">
         <p><strong>Email:</strong> <a href="mailto:pandiajason@gmail.com"><em>pandiajason@gmail.com</em></a> &nbsp; | &nbsp; <strong>GitHub:</strong> <a href="https://github.com/PandiaJason"><em>@PandiaJason</em></a></p>
@@ -185,7 +199,7 @@
 
         <p>Visualizing Spatial Geometry, Cooking, Tea Making, & Technical Reading.</p>
     </section>
-
+</div>
     <footer>
         <section id="footer">
             <strong>Maintained by Jason Pandian</strong>
