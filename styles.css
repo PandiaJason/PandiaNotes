@@ -94,7 +94,7 @@ a.nav-button {
     font-weight: bold;
     font-size: 16px;
     color: #ffffff; /* Set text color */
-    border: 2px solid #ffffff;
+    /* border: 2px solid #ffffff; */
     padding: 2px 2px;
     text-align: center;
     text-decoration: none;
