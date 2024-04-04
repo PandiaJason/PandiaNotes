@@ -127,3 +127,19 @@ a.open-button:hover {
     background-color: rgba(0, 0, 0);
     color: #ffffff;
 }
+
+/* Media query for small screens */
+@media only screen and (max-width: 600px) {
+    #content {
+        margin-top: 20px;
+        text-align: center;
+        max-width: 70%;
+        margin: 0 auto;
+        font-size: 1.2em;
+        text-align: left;
+        padding: 40px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.1); /* Set a semi-transparent white background */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a box shadow for a blurry effect */
+    }
+}
